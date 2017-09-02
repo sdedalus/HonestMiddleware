@@ -20,5 +20,5 @@ public Task WriteAsync(string what, PathString path, IOwinContext context, Func<
 ```
 and register it like this:
 ```csharp
-app.Use<string, PathString>("{'greeting':'Hello!'}", new PathString("/hello"), WriteAsync);
+app.Use("{'greeting':'Hello!'}", new PathString("/hello"), WriteAsync);
 ```
