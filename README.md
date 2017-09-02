@@ -1,7 +1,9 @@
 # HonestMiddleware
 
-Functional Owin Middleware with an honest function signiture.  this extension library lets you inject dependancies directly at the USE call and will colse over the dependancies before the deligate is passed to the Owin framework.
-so you can define your middleware like this:
+Functional Owin Middleware with an honest function signature.  This extension library lets you inject 
+dependencies directly at the USE call and will close over the dependencies before the delegate is passed 
+to the Owin framework.
+you can define your middleware like this:
 ```csharp
 public Task WriteAsync(string what, PathString path, IOwinContext context, Func<Task> next)
 {
